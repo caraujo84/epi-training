@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using AlloyDemo.Features.RegisterPersonas;
 using Owin;
 
 [assembly: OwinStartup(typeof(AlloyDemo.Startup))]
@@ -19,6 +20,8 @@ namespace AlloyDemo
 
             // Add CMS integration for ASP.NET Identity
             app.AddCmsAspNetIdentity<ApplicationUser>();
+
+            //app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
 
             // Remove to block registration of administrators
             app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
