@@ -4,6 +4,7 @@ using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.SpecializedProperties;
 using AlloyDemo.Models.Blocks;
+using EPiServer.XForms;
 
 namespace AlloyDemo.Models.Pages
 {
@@ -20,6 +21,8 @@ namespace AlloyDemo.Models.Pages
         ExcludeOn = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage) })] // ...and underneath those we can't create additional start pages
     public class StartPage : SitePageData
     {
+        public virtual XForm MyForm { get; set; }
+
         [Display(
             GroupName = SystemTabNames.Content,
             Order = 320)]

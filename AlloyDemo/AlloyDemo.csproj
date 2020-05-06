@@ -163,6 +163,9 @@
     <Reference Include="EPiServer.Web.WebControls, Version=11.15.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.CMS.AspNet.11.15.0\lib\net461\EPiServer.Web.WebControls.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.XForms, Version=1.0.3.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPiServer.XForms.1.0.3\lib\net461\EPiServer.XForms.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
@@ -477,6 +480,8 @@
     <Content Include="modules\_protected\EPiServer.Marketing.Testing\EPiServer.Marketing.Testing.zip" />
     <Content Include="Features\RegisterPersonas\RegisterPersonas.cshtml" />
     <Content Include="Features\Web.config" />
+    <Content Include="modules\_protected\EPiServer.XForms\web.config" />
+    <Content Include="modules\_protected\EPiServer.XForms\EPiServer.XForms.zip" />
     <None Include="packages.config" />
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
