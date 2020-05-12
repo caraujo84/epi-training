@@ -7,6 +7,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using AlloyDemo.Features.RegisterPersonas;
 using Owin;
+using AlloyDemo.Features.ResetAdmin;
 
 [assembly: OwinStartup(typeof(AlloyDemo.Startup))]
 
@@ -24,7 +25,9 @@ namespace AlloyDemo
             //app.UseRegisterPersonas(() => HttpContext.Current.Request.IsLocal);
 
             // Remove to block registration of administrators
-            app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
+            //app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
+
+            //app.UseResetAdmin(() => HttpContext.Current.Request.IsLocal);
 
             // Use cookie authentication
             app.UseCookieAuthentication(new CookieAuthenticationOptions
