@@ -374,6 +374,8 @@
     <Compile Include="Controllers\VideoFileController.cs" />
     <Compile Include="Features\RegisterPersonas\RegisterPersonas.cs" />
     <Compile Include="Features\RegisterPersonas\RegisterPersonasController.cs" />
+    <Compile Include="Features\ResetAdmin\ResetAdmin.cs" />
+    <Compile Include="Features\ResetAdmin\ResetAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -432,6 +434,7 @@
     <Content Include="ClientResources\Styles\Styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="Features\RegisterPersonas\Startup.cs-changes.txt" />
+    <Content Include="Features\ResetAdmin\Startup.cs-changes.txt" />
     <Content Include="IndexingService\IndexingService.svc" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\3.6.0\ClientResources\Criteria\SubmittedValue.js" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\3.6.0\ClientResources\epi-formssamples\FormsSamplesModule.js" />
@@ -484,10 +487,13 @@
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\ElementBlocks\RecaptchaElementBlock.ascx" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\Shared\EditorTemplates\FormModel.ascx" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
+    <Content Include="Resources\LanguageFiles\ContentTypeNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\EditorHints.xml" />
+    <Content Include="Resources\LanguageFiles\GroupNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\GroupNames.xml" />
+    <Content Include="Resources\LanguageFiles\PropertyNames-sv.xml" />
     <Content Include="Resources\LanguageFiles\PropertyNames.xml" />
     <Content Include="Resources\LanguageFiles\Views.xml" />
     <Content Include="Resources\LanguageFiles\_ReadMe.txt" />
@@ -564,6 +570,7 @@
     <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\module.config" />
     <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.LanguageManager.config" />
     <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.Labs.LanguageManager.zip" />
+    <Content Include="Features\ResetAdmin\ResetAdmin.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\SearchPage\Index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
