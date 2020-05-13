@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>EPiServer.Personalization.MaxMindGeolocation</name>
+  </assembly>
+  <members>
+    <member name="T:EPiServer.Personalization.Internal.CityResult">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Represents the response from a City database.
+            </summary>
+      <exclude />
+    </member>
+    <member name="M:EPiServer.Personalization.Internal.CityResult.#ctor(MaxMind.GeoIP2.Responses.AbstractCityResponse)">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Initializes an instance of <see cref="T:EPiServer.Personalization.Internal.CityResult" /> from a <see cref="T:MaxMind.GeoIP2.Responses.AbstractCityResponse" /> returned from the MaxMind database.
+            </summary>
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CityResult.Response">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Gets the full response from the MaxMind database.
+            Can be used if detailed information about the location is required.
+            Note that there is no compatibility guarantee for this object.
+            </summary>
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CityResult.ContinentCode">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CityResult.CountryCode">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CityResult.Region">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CityResult.TimeZone">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CityResult.Location">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="T:EPiServer.Personalization.Internal.CountryResult">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Represents the response from a Country database.
+            </summary>
+      <exclude />
+    </member>
+    <member name="M:EPiServer.Personalization.Internal.CountryResult.#ctor(MaxMind.GeoIP2.Responses.AbstractCountryResponse)">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Initializes an instance of <see cref="T:EPiServer.Personalization.Internal.CountryResult" /> from a <see cref="T:MaxMind.GeoIP2.Responses.AbstractCountryResponse" /> returned from the MaxMind database.
+            </summary>
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CountryResult.Response">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Gets the full response from the MaxMind database.
+            Can be used if detailed information about the location is required.
+            Note that there is no compatibility guarantee for this object.
+            </summary>
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CountryResult.ContinentCode">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="P:EPiServer.Personalization.Internal.CountryResult.CountryCode">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="T:EPiServer.Personalization.Internal.CsvGeographicLocationsProvider">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Provider that loads geographic locations for the <see cref="T:EPiServer.Personalization.MaxMindGeolocationProvider" /> from a CSV file that is provided by MaxMind.
+            </summary>
+      <exclude />
+    </member>
+    <member name="M:EPiServer.Personalization.Internal.CsvGeographicLocationsProvider.#ctor(System.String,System.Globalization.CultureInfo)">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice. Initializes an instance of <see cref="T:EPiServer.Personalization.Internal.CsvGeographicLocationsProvider" />.
+            </summary>
+      <exclude />
+    </member>
+    <member name="M:EPiServer.Personalization.Internal.CsvGeographicLocationsProvider.GetContinentCodes">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="M:EPiServer.Personalization.Internal.CsvGeographicLocationsProvider.GetCountryCodes(System.String)">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="M:EPiServer.Personalization.Internal.CsvGeographicLocationsProvider.GetRegions(System.String)">
+      <summary>Unsupported INTERNAL API! Not covered by semantic versioning; might change without notice.</summary>
+      <inheritdoc />
+      <exclude />
+    </member>
+    <member name="T:EPiServer.Personalization.MaxMindGeolocationOptions">
+      <summary>
+            Options for the <see cref="T:EPiServer.Personalization.MaxMindGeolocationProvider" />.
+            </summary>
+    </member>
+    <member name="P:EPiServer.Personalization.MaxMindGeolocationOptions.DatabasePath">
+      <summary>
+            The location of the database file. This can be absolute or relative to the webroot or,
+            when outside the web environment, relative to the current executing directory.
+            </summary>
+    </member>
+    <member name="P:EPiServer.Personalization.MaxMindGeolocationOptions.Capabilities">
+      <summary>
+            Explicit definition of the capabilities of the provider.
+            </summary>
+      <remarks>
+            This option does not need to be set when a standard MaxMind database is used.
+            </remarks>
+    </member>
+    <member name="P:EPiServer.Personalization.MaxMindGeolocationOptions.LocationsDatabasePath">
+      <summary>
+            Path to the CSV locations database file that should be used by the <see cref="T:EPiServer.Personalization.MaxMindGeolocationProvider" />.
+            </summary>
+    </member>
+    <member name="P:EPiServer.Personalization.MaxMindGeolocationOptions.LocationsCulture">
+      <summary>
+            Specifies the <see cref="T:System.Globalization.CultureInfo" /> that should be used to compare locations loaded from the CSV-file specified by the <see cref="P:EPiServer.Personalization.MaxMindGeolocationOptions.LocationsDatabasePath" />. Default is "en".
+            </summary>
+    </member>
+    <member name="T:EPiServer.Personalization.MaxMindGeolocationProvider">
+      <summary>
+            Implementation of <see cref="T:EPiServer.Personalization.IGeolocationProvider" /> for MaxMind Geolocation databases based on the .mmdb format.
+            </summary>
+      <remarks>
+            This provider have currently only been verified with MaxMind GeoLite2 Country and City geo databases.
+            </remarks>
+    </member>
+    <member name="M:EPiServer.Personalization.MaxMindGeolocationProvider.#ctor(EPiServer.Personalization.MaxMindGeolocationOptions,EPiServer.Web.IWebHostingEnvironment)">
+      <summary>
+            Initializes an instance of <see cref="T:EPiServer.Personalization.MaxMindGeolocationProvider" />.
+            </summary>
+    </member>
+    <member name="P:EPiServer.Personalization.MaxMindGeolocationProvider.Capabilities">
+      <inheritdoc />
+    </member>
+    <member name="M:EPiServer.Personalization.MaxMindGeolocationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+      <summary>
+            Inititalize provider with a collection of configuration parameters.
+            </summary>
+      <remarks>
+            This method exists for the single purpose of supporting web.config driven initialization.
+            </remarks>
+    </member>
+    <member name="M:EPiServer.Personalization.MaxMindGeolocationProvider.GetContinentCodes">
+      <inheritdoc />
+    </member>
+    <member name="M:EPiServer.Personalization.MaxMindGeolocationProvider.GetCountryCodes(System.String)">
+      <inheritdoc />
+    </member>
+    <member name="M:EPiServer.Personalization.MaxMindGeolocationProvider.GetRegions(System.String)">
+      <inheritdoc />
+    </member>
+    <member name="M:EPiServer.Personalization.MaxMindGeolocationProvider.Lookup(System.Net.IPAddress)">
+      <inheritdoc />
+    </member>
+    <member name="T:EPiServer.ServiceLocation.ServiceConfigurationProviderExtensions">
+      <summary>
+            Provides extension methods for <see cref="T:EPiServer.ServiceLocation.IServiceConfigurationProvider" /> implemenations.
+            </summary>
+    </member>
+    <member name="M:EPiServer.ServiceLocation.ServiceConfigurationProviderExtensions.AddMaxMindGeolocationProvider(EPiServer.ServiceLocation.IServiceConfigurationProvider,System.Action{EPiServer.Personalization.MaxMindGeolocationOptions})">
+      <summary>
+            Adds the <see cref="T:EPiServer.Personalization.MaxMindGeolocationProvider" /> provider to the container with the provided configuration.
+            </summary>
+      <param name="services">The service configuration provider.</param>
+      <param name="configure">Method used to configure <see cref="T:EPiServer.Personalization.MaxMindGeolocationOptions" /> for the provider.</param>
+      <returns>The service configuration provider</returns>
+    </member>
+    <member name="M:EPiServer.ServiceLocation.ServiceConfigurationProviderExtensions.AddMaxMindGeolocationProvider(EPiServer.ServiceLocation.IServiceConfigurationProvider,System.String,System.String)">
+      <summary>
+            Adds the <see cref="T:EPiServer.Personalization.MaxMindGeolocationProvider" /> provider to the container with the provided configuration.
+            </summary>
+      <param name="services">The service configuration provider.</param>
+      <param name="databasePath">The path to the MaxMind database file.</param>
+      <param name="locationsDatabasePath">The path to the MaxMind locations CSV-file.</param>
+      <returns>The service configuration provider</returns>
+    </member>
+  </members>
+</doc>
