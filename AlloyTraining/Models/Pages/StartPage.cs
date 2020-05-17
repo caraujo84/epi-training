@@ -10,7 +10,8 @@ namespace AlloyTraining.Models.Pages
     [ContentType(DisplayName = "StartPage", GUID = "c8846ea4-11f1-4bfd-b72b-ab7dabd39f92", 
         GroupName = SiteGroupNames.Specialized, Order = 10,
         Description = "The home page for a website with an area for blocks and partial pages.")]
-    public class StartPage : PageData
+    [SiteStartIcon]
+    public class StartPage : SitePageData
     {
         [CultureSpecific]
         [Display(Name = "Heading",
@@ -28,5 +29,12 @@ namespace AlloyTraining.Models.Pages
             Description = "The main content area contains an ordered collection to content references, for example blocks, media assets, and pages.",
             GroupName = SystemTabNames.Content, Order = 30)]
         public virtual ContentArea MainContentArea { get; set; }
+
+        // add a new Admin-only property
+        [CultureSpecific]
+        [Display(Name = "Footer text",
+            Description = "The footer text will be shown at the bottom of every page.",
+            GroupName = SiteTabNames.SiteSettings, Order = 10)]
+        public virtual string FooterText { get; set; }
     }
 }
