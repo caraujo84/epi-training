@@ -342,7 +342,6 @@
     <Compile Include="Business\EditorDescriptors\ContactPageSelectionFactory.cs" />
     <Compile Include="Business\EditorDescriptors\ContactPageSelector.cs" />
     <Compile Include="Business\EditorDescriptors\StringListEditorDescriptor.cs" />
-    <Compile Include="Business\ExtensionMethods\LayoutExtensionMethods.cs" />
     <Compile Include="Business\IModifyLayout.cs" />
     <Compile Include="Business\Initialization\BundleConfig.cs" />
     <Compile Include="Business\Initialization\CustomizedRenderingInitialization.cs" />
@@ -424,7 +423,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Business\ExtensionMethods\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\GeoLite2\COPYRIGHT.txt" />
     <Content Include="App_Data\GeoLite2\LICENSE.txt" />

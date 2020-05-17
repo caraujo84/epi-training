@@ -10,6 +10,7 @@ namespace AlloyTraining.Models.Pages
     [ContentType(DisplayName = "StartPage", GUID = "c8846ea4-11f1-4bfd-b72b-ab7dabd39f92", 
         GroupName = SiteGroupNames.Specialized, Order = 10,
         Description = "The home page for a website with an area for blocks and partial pages.")]
+    [AvailableContentTypes(Include = new[] { typeof(StandardPage) })]
     [SiteStartIcon]
     public class StartPage : SitePageData
     {
