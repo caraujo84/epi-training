@@ -26,9 +26,12 @@ namespace AlloyTraining.Models.Pages
             GroupName = SystemTabNames.Content, Order = 20)]
         public virtual XhtmlString MainBody { get; set; }
 
+        [CultureSpecific]
         [Display(Name = "Main content area",
-            Description = "The main content area contains an ordered collection to content references, for example blocks, media assets, and pages.",
-            GroupName = SystemTabNames.Content, Order = 30)]
+            Description = "Drag and drop images, blocks, and pages with partial templates.",
+            GroupName = SystemTabNames.Content,
+            Order = 30)]
+        [AllowedTypes(typeof(StandardPage), typeof(BlockData), typeof(ImageData), typeof(ContentFolder))]
         public virtual ContentArea MainContentArea { get; set; }
 
         // add a new Admin-only property
